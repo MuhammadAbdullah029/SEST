@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: cursive;
+}
+body{
+    background-color: #212121;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    padding: 3vw;
+}
+.card{
+    min-height: 55%;
+    width: 45%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.card:nth-child(1){
+    padding: 1vw;
+}
+h1{
+    font-size: 2.5vw;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+.input input{
+    width: 35vw;
+    border: 1px solid gray;
+    background: transparent;
+    outline: none;
+    padding: .5vw;
+    font-family: sans-serif;
+    border-radius: 5px 0 0 0 ;
+}
+.input button{
+    padding: .5vw 1vw;
+    border: 1px solid gray;
+    background: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 0 0 5px 0 ;
+    width: 5vw;
+    height: 2.3vw;
+    font-size: 1vw;
+}
+.input button:hover{
+    background-color: #212121;
+}
+.input button:active{
+    scale: .9;
+}
+
+.check-boxes{
+    gap: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+    width: 100%;
+    padding: 1.5vw;
+    font-size: 1.3vw;
+}
+h3{
+    padding: 1vw;
+    text-align: center;
+    font-weight: 300;
+    color: gray;
+}
+.check-box{
+    gap: .5vw;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+}
+.check-box label {
+    font-family: sans-serif;
+    color: gray;
+}
+.check-box img{
+    height: 1.8vw;
+    opacity: .8;
+}
+.check-box input{
+    opacity: .8;
+}
+p{
+    font-size: 1vw;
+    color: gray;
+    padding-bottom: 1vw;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 5px
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5e5e5e;
+    border-radius: 5px
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 90%;
+    }
+    h1{
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+    .input{
+        margin-top: 4vw;
+    }
+    .input input{
+        width: 55vw;
+        height: 9vw;
+        padding: 1.8vw;
+        font-family: sans-serif;
+    }
+    .input button{
+        padding: 1.3vw 1.5vw;
+        font-family: sans-serif;
+        width: 15vw;
+        height: 8.6vw;
+        font-size: 2.5vw;
+    }
+    .check-boxes{
+        gap: 4vw;
+        padding-top: 6vw;
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    h3{
+        padding: 2vw;
+        color: gray;
+    }
+    .check-box{
+        gap: 2vw;
+    }
+    .check-box label {
+        font-family: sans-serif;
+    }
+    .check-box img{
+        height: 6vw;
+    }
+    p{
+        color: gray;
+        font-size: 3vw;
+        padding-bottom: 2vw;
+        font-family: sans-serif;
+        padding: 1.5vw;
+    }
+    p b{
+        color: gray;
+        font-family: sans-serif;
+    }
+}
