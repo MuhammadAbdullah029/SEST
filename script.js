@@ -1,6 +1,7 @@
 let btn = document.querySelector("button");
 
 
+
 btn.addEventListener("click", function(){
     let text = document.querySelector("input").value;
     let google = document.querySelector(".google").checked;
@@ -57,4 +58,11 @@ btn.addEventListener("click", function(){
         
     }
 
+})
+
+document.querySelector("input").addEventListener("keydown", function(e){
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        btn.click();
+    }
 })

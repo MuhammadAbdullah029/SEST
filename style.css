@@ -97,6 +97,10 @@ h3{
     height: 1.8vw;
     opacity: .8;
 }
+.check-box svg{
+    height: 1.8vw;
+    opacity: .8;
+}
 .check-box input{
     opacity: .8;
 }
@@ -160,7 +164,7 @@ p{
     .check-box label {
         font-family: sans-serif;
     }
-    .check-box img{
+    .check-box svg{
         height: 6vw;
     }
     p{
